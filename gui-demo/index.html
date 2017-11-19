@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="prophetApp" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DiskProphet</title>
+  <link rel="icon" type="image/x-icon" href="/img/prophetstor_white_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <base href="/">
+<link href="/css/app.css" rel="stylesheet"></head>
+<body>
+  <div class="page-wrapper fixed-navbar-top" ui-view>
+    <div id="loader-container" style="display:none">
+      <div id="loader">
+        <div class="loader-inner line-scale">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var loadersign = document.getElementById('loader-container');
+    loadersign.style.display = "block";
+    window.onload = function () {
+      loadersign.style.display = "none";
+    }
+  </script>
+<script type="text/javascript" src="/app.a4b63866c99bcd13f769.js"></script></body>
+</html>
